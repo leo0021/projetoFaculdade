@@ -1,31 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
-    <title>formulario de cadastro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>formulario de cadastro</title>
   </head>
   <body>
-    <h1>Formulario</h1>
-    <p>Escreva suas informaçoes</p>
+    <header><h1>Cadastro De Usuario</h1></header>
+    <main>
+    <p><h2>Cadastre suas informaçoes</h2></p>
     <form action="save" method="POST">
       <p>
-        <label>Email:
-         <input type="email" name="email">
-        </label>
-      </p>
-     <p>
-       <label>Nome:
-       <input type="text" name="name"/>
-     </p>
-       </label>
+        <label>Nome:
+        <input type="text" name="name" placeholder="digite o seu Nome"/>
+      </label>
+      </p><br>
       <p>
-       <label>idade:
-       <input type="number" name="age">
+        <label>Email:
+         <input type="email" name="email" placeholder="digite o seu email">
+        </label>
+      </p><br>
+      <p>
+       <label>Senha:
+       <input type="password" name="senha" placeholder="digite sua senha">
        </label>
       </p>
       <p>
         <input type="submit" value="salvar">
       </p>
     </form>
+    </main>
   </body>
 </html>
