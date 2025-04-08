@@ -24,10 +24,20 @@
       <p>
        <label>Senha:
        <input type="password" name="senha" placeholder="digite sua senha">
-        <input type="submit" value="salvar">
+        <br><br><input type="submit" value="salvar" class="botao">
        </label>
       </p>
     </form>
+    <ul>
+      <p>Nome:</p>
+      <% for(let i = 0; i < result.length; i++ ) { %>
+      <li><%= result[i].name %></li>
+      <% } %>
+      <br><p>Email :</p>
+      <% for(let i = 0; i < result.length; i++ ) { %>
+        <li><%= result[i].email %></li>
+        <% } %>
+    </ul>
     </main>
   </body>
 </html>
