@@ -31,13 +31,25 @@
     <ul>
       <p>Nome:</p>
       <% for(let i = 0; i < result.length; i++ ) { %>
-      <li><%= result[i].name %></li>
+      <li><%= result[i].name %> (<%= result[i]._id %>)</li>
       <% } %>
       <br><p>Email :</p>
       <% for(let i = 0; i < result.length; i++ ) { %>
-        <li><%= result[i].email %></li>
+        <li><%= result[i].email %> (<%= result[i]._id %>)</li>
         <% } %>
     </ul>
+    <div class="exclusão"><h2>Exclusão</h2>
+    <form action="delete" method="POST">
+      <p>
+        <label class="ID">ID:
+        <input type="text" name="id" placeholder="digite o seu Nome"/>
+      </label>
+      </p><br>
+      <p>
+      <p>
+        <input type="submit" value="Excluir" class="botao">
+      </p>
+    </div>
     </main>
   </body>
 </html>
