@@ -15,4 +15,12 @@ router.post("/save", async (req, res) => {
  res.json(result);
 })
 
+router.post("/delete", async (req, res) => {
+  const id = req.body.id;
+  const result = await db.remove(id);
+  console.log(result);
+  res.json(result);
+ })
+ 
+
 module.exports = router;
