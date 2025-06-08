@@ -73,6 +73,16 @@ h2{
 .exclusão{
   position: relative;
   margin-left: 70;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
+  bottom: 80px;
 
+}
+
+.botaoE{
+  margin-top: 15px;
+}
+
+.edição{
+  position: relative;
+  bottom: 150px;
 }
