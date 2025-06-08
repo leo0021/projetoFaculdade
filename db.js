@@ -30,9 +30,16 @@ async function remove(id) {
     
 }
 
+async function update(id, name, email) {
+    const db = await connect();
+    return db.collection("customers").updateOne({_id: new ObjectId(id) }, { $set: { name, email }, });
+    
+}
+
 
 module.exports = {
     insert,
     find,
-    remove
+    remove,
+    update
 }
