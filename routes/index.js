@@ -22,5 +22,14 @@ router.post("/delete", async (req, res) => {
   res.json(result);
  })
  
+ router.post("/edit", async (req, res) => {
+  const id = req.body.id;
+  const name = req.body.name;
+  const email = req.body.email;
+  const result = await db.update(id, name, email);
+  console.log(result);
+  res.json(result);
+ })
+ 
 
 module.exports = router;
